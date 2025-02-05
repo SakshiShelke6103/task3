@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop</title>
+    <style>
+        /* Simple reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and basic layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Unique heading style */
+        .page-heading {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Container for scrollable product list */
+        .product-container {
+            max-height: 600px; /* limit height for scrolling */
+            overflow-y: auto; /* enable vertical scrolling */
+            margin-top: 20px;
+        }
+
+        .product-item {
+            background-color: white;
+            width: 80%;
+            margin: 15px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .product-item img {
+                width: 100%;
+                max-width: 350px;
+                height: auto;
+                border-radius: 8px;
+            }
+
+        .product-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .product-description {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            color: #ff6347;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            .add-to-cart:hover {
+                background-color: #e04e3b;
+            }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Unique Heading -->
+    <h1 class="page-heading">Exclusive Furniture Collection</h1>
+
+    <!-- Scrollable Product Container -->
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product-item">
+            <img src="https://th.bing.com/th/id/OIP.FCzy6GOc8kk9ueF0ZEHV7gHaE6?rs=1&pid=ImgDetMain/350x200" alt="Sofa">
+            <h2 class="product-name">Comfortable Sofa</h2>
+            <p class="product-description">A spacious and soft sofa, perfect for your living room. Upholstered with high-quality fabric.</p>
+            <p class="product-price">₹49,999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-item">
+            <img src="https://th.bing.com/th/id/OIP.4gyrVLKHUo-wMndivfnebwHaFZ?rs=1&pid=ImgDetMain/350x200" alt="Dining Table">
+            <h2 class="product-name">Wooden Dining Table</h2>
+            <p class="product-description">A modern wooden dining table with four chairs. Durable and elegant, designed for family meals.</p>
+            <p class="product-price">₹29,999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-item">
+            <img src="https://th.bing.com/th/id/OIP.IJs3s92fR-swCsNs3KVXQQHaHt?rs=1&pid=ImgDetMain/350x200" alt="Bookshelf">
+            <h2 class="product-name">Classic Bookshelf</h2>
+            <p class="product-description">A sturdy and stylish bookshelf to display your favorite books and decor. Made with solid wood.</p>
+            <p class="product-price">₹15,999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-item">
+            <img src="https://th.bing.com/th/id/OIP.jNACnWc1EwXIepQxMEgfrgHaE7?w=256&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7/350x200" alt="Armchair">
+            <h2 class="product-name">Elegant Armchair</h2>
+            <p class="product-description">A luxurious armchair with a soft cushion, ideal for reading or relaxing.</p>
+            <p class="product-price">₹22,999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-item">
+            <img src="https://th.bing.com/th?id=OIP.5RYkcltunFDjP3JTsNFW6wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2/350x200" alt="Coffee Table">
+            <h2 class="product-name">Glass Coffee Table</h2>
+            <p class="product-description">A sleek glass coffee table with a minimalist design that suits any living room.</p>
+            <p class="product-price">₹17,999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-item">
+            <img src="https://th.bing.com/th/id/OIP.pJuUEgbHe7RAl1Do3axbmQHaHa?w=209&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7/350x200" alt="Bed Frame">
+            <h2 class="product-name">King Size Bed Frame</h2>
+            <p class="product-description">A sturdy metal bed frame with a modern design. Perfect for your bedroom.</p>
+            <p class="product-price">₹39,999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FurnitureShop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
